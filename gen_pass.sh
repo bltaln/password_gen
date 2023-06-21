@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # Afișează mesajul de deschidere
-echo "Programul a fost pornit."
-echo "Script dezvoltat de www.linecode.ro"
+echo "|**************************************************|"
+echo "|********  Programul a fost pornit.   *************|"
+echo "|****** Script dezvoltat de www.linecode.ro *******|"
+echo "|**************************************************|"
 
 # Funcție pentru generarea parolei
 generate_password() {
@@ -16,7 +18,7 @@ generate_password() {
   password=$(openssl rand -base64 48 | tr -dc "$characters" | head -c "$password_length")
   
   # Afișează parola generată
-  echo "Parola generată: $password"
+  echo "|**** Parola generată: [ $password ] *****"
 }
 
 # Generează și afișează o parolă
